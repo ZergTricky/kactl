@@ -79,7 +79,10 @@
 
 	\subsection{Bell numbers}
 		Total number of partitions of $n$ distinct elements. $B(n) =$
-		$1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, \dots$. For $p$ prime,
+		$1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, \dots$
+	        $$B(n + 1) = \sum_{k=0}^n\binom{n}{k}B(n-k)$$
+        	$$B(n) = \sum_{k=0}^nS(n,k)$$
+		For $p$ prime,
 		\[ B(p^m+n)\equiv mB(n)+B(n+1) \pmod{p} \]
 
 	\subsection{Labeled unrooted trees}
